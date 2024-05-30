@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/online188/fontend/static/css/main.0cfedaf8.css",
-    "main.js": "/online188/fontend/static/js/main.5ebe30db.js",
-    "static/media/logo.png": "/online188/fontend/static/media/logo.91111ba06e2f8345fa61.png",
-    "index.html": "/online188/fontend/index.html",
-    "main.0cfedaf8.css.map": "/online188/fontend/static/css/main.0cfedaf8.css.map",
-    "main.5ebe30db.js.map": "/online188/fontend/static/js/main.5ebe30db.js.map"
+    "main.css": "/fontend/static/css/main.0cfedaf8.css",
+    "main.js": "/fontend/static/js/main.ac0e015b.js",
+    "static/media/logo.png": "/fontend/static/media/logo.91111ba06e2f8345fa61.png",
+    "index.html": "/fontend/index.html",
+    "main.0cfedaf8.css.map": "/fontend/static/css/main.0cfedaf8.css.map",
+    "main.ac0e015b.js.map": "/fontend/static/js/main.ac0e015b.js.map"
   },
   "entrypoints": [
     "static/css/main.0cfedaf8.css",
-    "static/js/main.5ebe30db.js"
+    "static/js/main.ac0e015b.js"
   ]
 }
