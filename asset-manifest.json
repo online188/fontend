@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/fontend/static/css/main.0cfedaf8.css",
-    "main.js": "/fontend/static/js/main.893cede4.js",
+    "main.js": "/fontend/static/js/main.a6c81b4b.js",
     "static/media/logo.png": "/fontend/static/media/logo.91111ba06e2f8345fa61.png",
     "index.html": "/fontend/index.html",
     "main.0cfedaf8.css.map": "/fontend/static/css/main.0cfedaf8.css.map",
-    "main.893cede4.js.map": "/fontend/static/js/main.893cede4.js.map"
+    "main.a6c81b4b.js.map": "/fontend/static/js/main.a6c81b4b.js.map"
   },
   "entrypoints": [
     "static/css/main.0cfedaf8.css",
-    "static/js/main.893cede4.js"
+    "static/js/main.a6c81b4b.js"
   ]
 }
