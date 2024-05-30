@@ -1,6 +1,7 @@
 import React from 'react';
 import AdBanner from './AdBanner';
 import logo from './logo.png'; // Import the logo image
+import { Link } from 'react-router-dom';
 
 function Header() {
   return (
@@ -8,9 +9,13 @@ function Header() {
       <section className="ftco-section">
         <div className="row">
           <div className="col-lg-4">
-            <a href="/">
+          <Link  to="/"> 
+            <img src={logo} alt="MissChina Logo" className="logo" />
+          </Link>
+
+            {/* <a href="/">
               <img src={logo} alt="MissChina Logo" className="logo" />
-            </a>
+            </a> */}
           </div>
           <div className="header-banner col-lg-8">
             <AdBanner
