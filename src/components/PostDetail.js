@@ -15,7 +15,7 @@ function PostDetail() {
   useEffect(() => {
     const fetchPost = async () => {
       try {
-        const res = await axios.get(`https://backend-k9e4.onrender.com/api/posts/${id}?page=${currentPage}&limit=5`);
+        const res = await axios.get(`https://backend-k9e4.onrender.com/api/posts/slug/${slug}?page=${currentPage}&limit=5`);
         setPost(res.data.post);
         setImages(res.data.images);
         setTotalPages(res.data.totalPages);
@@ -46,7 +46,7 @@ function PostDetail() {
   };
 
   const handlePostClick = (postId) => {
-    navigate(`/post/${postId}`, { replace: true });
+    navigate(`/post/${postSlug}`, { replace: true });
     window.scrollTo(0, 0); // Scroll to top when navigating to a new post
   };
 
@@ -105,7 +105,7 @@ function PostDetail() {
           <div className="row p-4">
             {randomPosts.map((post) => (
               <div className="view-more col-lg-4 content mt-4" key={post._id}>
-                <div className="yarpp-thumbnail" rel="norewrite" onClick={() => handlePostClick(post._id)}>
+                <div className="yarpp-thumbnail" rel="norewrite" onClick={() => handlePostClick(post.slug)}>
                   <img width="310" height="165" src={post.thumbnail} className="attachment-tie-medium size-tie-medium wp-post-image" alt={post.title} decoding="async" loading="lazy" />
                   <span className="yarpp-thumbnail-title">{post.title}</span>
                 </div>
