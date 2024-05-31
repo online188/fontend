@@ -31,15 +31,15 @@ function Tag({ tag }) {
             <div className="posts">
               {posts.length > 0 ? (
                 posts.map(post => (
-                  <article className="mb-2 item-list" key={post._id}>
+                  <article className="mb-2 item-list" key={post.slug}>
                     <div className="post-thumbnail">
-                      <Link to={`/post/${post._id}`}>
+                      <Link to={`/post/${post.slug}`}>
                         <img width="600" height="315" src={post.thumbnail} alt={post.title} />
                         <span className="fa overlay-icon"></span>
                       </Link>
                     </div>
                     <h2 className="post-box-title">
-                      <Link to={`/post/${post._id}`}>{post.title}</Link>
+                      <Link to={`/post/${post.slug}`}>{post.title}</Link>
                     </h2>
                     <p className="post-meta">
                       <span className="post-views"><i className="fa fa-eye"></i> {post.postViews} views </span>

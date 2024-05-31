@@ -29,7 +29,6 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/fontend" element={<Home />} />
-            {/* <Route path="/post/:id" element={<PostDetail />} /> */}
             <Route path="/post/:slug" element={<PostDetail />} />
             {tags.map(tag => (
               <Route key={tag} path={`/tag/${tag}`} element={<Tag tag={tag} />} />
