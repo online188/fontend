@@ -4,7 +4,7 @@ import { useParams, Link, useNavigate } from 'react-router-dom';
 import './PostDetail.css'; // Import custom CSS for styling
 
 function PostDetail() {
-  const { id } = useParams();
+  const { slug } = useParams();
   const navigate = useNavigate();
   const [post, setPost] = useState(null);
   const [images, setImages] = useState([]);
@@ -26,7 +26,7 @@ function PostDetail() {
     };
 
     fetchPost();
-  }, [id, currentPage]);
+  }, [slug, currentPage]);
 
   useEffect(() => {
     const fetchRandomPosts = async () => {
@@ -45,7 +45,7 @@ function PostDetail() {
     setCurrentPage(page);
   };
 
-  const handlePostClick = (postId) => {
+  const handlePostClick = (postSlug) => {
     navigate(`/post/${postSlug}`, { replace: true });
     window.scrollTo(0, 0); // Scroll to top when navigating to a new post
   };
