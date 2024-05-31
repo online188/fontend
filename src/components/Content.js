@@ -25,9 +25,9 @@ function Content() {
   const handlePageChange = (page) => {
     setCurrentPage(page);
   };
-  
+
   if (posts.length === 0) {
-    return <div>Loading...</div>;
+    return <div style={{ color: 'black', fontSize: '28px'}}>Loading...</div>;
   }
 
   return (
