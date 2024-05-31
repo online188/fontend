@@ -69,7 +69,7 @@ function PostDetail() {
                   <strong>Number of items:</strong> {post.numberOfItems}<br />
                   <strong>File size:</strong> {post.fileSize}<br />
                   <strong>Dimensions:</strong> {post.dimensions}<br />
-                  <strong>Password unrar:</strong> <input type="text" size="11" readOnly value="misskon.com" /><br />
+                  <strong>Password unrar:</strong> <input type="text" size="11" readOnly value="misskina.com" /><br />
                   Please download to view this album in original quality and without watermark.<br />
                 </div>
               </div>
