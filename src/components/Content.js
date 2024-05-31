@@ -25,6 +25,10 @@ function Content() {
   const handlePageChange = (page) => {
     setCurrentPage(page);
   };
+  
+  if (posts.length === 0) {
+    return <div>Loading...</div>;
+  }
 
   return (
     <div>
